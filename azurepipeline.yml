@@ -17,5 +17,4 @@ stages:
           steps:
           - script: |
              cd /var/www/html/
-             sudo git checkout main
-             sudo git pull
+             sudo touch testedok.html
