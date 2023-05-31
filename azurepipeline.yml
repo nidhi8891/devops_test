@@ -16,9 +16,7 @@ stages:
       runOnce:
         deploy:
           steps:
-          -task: bash@3
-           inputs:
-           -script: |
+          - script: |
              cd /var/www/html/
              sudo git reset --hard
              sudo git checkout main
