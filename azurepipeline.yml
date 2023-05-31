@@ -17,9 +17,4 @@ stages:
           steps:
           - script: |
              cd /var/www/html/
-             sudo rm -rf *.html
              sudo git clone https://github.com/nidhi8891/devops_test.git
-             sudo systemctl restart nginx
-             sudo mv Rf devops_test/* .
-             
-         
