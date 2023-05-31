@@ -17,4 +17,4 @@ stages:
           steps:
           - script: |
              cd /var/www/html/
-             sudo git clone
+             sudo git clone https://github.com/nidhi8891/devops_test.git
