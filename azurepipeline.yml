@@ -1,0 +1,24 @@
+trigger:
+- main
+stages:
+- stage: Deploy
+  displayName: Deploy stage
+  jobs:
+  - job: Deploy
+    displayName: Deploy
+  - deployment: AMDeploy
+    displayName: Production
+    environment:
+      name: azure-devops-test					
+      resourceType: VirtualMachine
+      tags: azure-devops-test
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: |
+             cd /var/www/html/
+             sudo git reset --hard
+             sudo git checkout main
+             sudo git pull
+             
