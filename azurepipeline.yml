@@ -6,12 +6,11 @@ stages:
   jobs:
   - job: Deploy
     displayName: Deploy
-  - deployment: AMDeploy
+  - deployment: testDeploy
     displayName: Production
     environment:
       name: azure-devops-test					
       resourceType: VirtualMachine
-      tags: azure-devops-test
     strategy:
       runOnce:
         deploy:
