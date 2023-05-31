@@ -6,7 +6,7 @@ stages:
   jobs:
   - job: Deploy
     displayName: Deploy
-  - deployment: test-deploy
+  - deployment: testdeploy
     displayName: Production
     environment:
       name: azure-devops-test					
