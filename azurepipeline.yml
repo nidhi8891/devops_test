@@ -17,6 +17,5 @@ stages:
           steps:
           - script: |
              cd /var/www/html/
-             sudo git reset --hard
              sudo git checkout main
              sudo git pull
