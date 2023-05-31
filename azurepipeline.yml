@@ -18,8 +18,7 @@ stages:
           steps:
           -task: bash@3
            inputs:
-             targetType: 'inline'
-             script: |
+           script: |
              cd /var/www/html/
              sudo git reset --hard
              sudo git checkout main
