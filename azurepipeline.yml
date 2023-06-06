@@ -16,8 +16,13 @@ stages:
         deploy:
           steps:
           - script: |
-             cd /var/www/html/
-             sudo git clone https://github.com/nidhi8891/devops_test.git
+             cd /var/www/html/devops_test/
+             sudo git reset --hard
+             sudo git checkout main
+             sudo git pull
+
              
-             cd /var/www/html/sdk/
-             sudo git clone --branch sdk https://github.com/nidhi8891/devops_test.git
+             cd /var/www/html/sdk/devops_test/
+             sudo git reset --hard
+             sudo git checkout sdk
+             sudo git pull
