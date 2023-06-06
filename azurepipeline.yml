@@ -18,3 +18,6 @@ stages:
           - script: |
              cd /var/www/html/
              sudo git clone https://github.com/nidhi8891/devops_test.git
+             
+             cd /var/www/html/sdk/
+             sudo git clone --branch sdk https://github.com/nidhi8891/devops_test.git
